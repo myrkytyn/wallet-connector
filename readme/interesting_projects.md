@@ -1,0 +1,3 @@
+1. [Node.JS Client app](https://github.com/silva95gustavo/wallet-budgetbakers) to use private Wallet API. Could be used for importing transactions files.
+2. [Node.js module](https://github.com/josecoelhomelo/wallet-budgetbakers-import) to import a CSV file with transactions to Wallet.
+3. [Python app](https://github.com/kdvillavicencio/wallet) for automated data entry for Wallet webapp using Selenium
