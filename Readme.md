@@ -14,10 +14,12 @@
 
 ### Як користуватися?
 
+1. Заповнити .env файл
+2. Запустити скрипт
 ```
-TODO :tent:
+docker compose up --build
 ```
-Детальна інструкція буде [тут](https://github.com/myrkytyn/wallet-connector/blob/main/readme/how_to_use.md).
+Детальна інструкція [тут](https://github.com/myrkytyn/wallet-connector/blob/main/readme/how_to_use.md).
 
 ## У планах:
 - [ ] Додати інтеграцію з приватним АРІ Приватбанк для експорту транзакцій.
