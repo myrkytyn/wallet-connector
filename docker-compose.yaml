@@ -1,0 +1,7 @@
+services:
+  wallet-connector:
+    container_name: wallet-connector
+    build: .
+    volumes:
+      - ./data:/app/data
+      
