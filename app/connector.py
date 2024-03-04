@@ -16,9 +16,8 @@ def change_data_in_csv(input_file, output_file):
 
         for row in reader:
             # Timestamp - time difference (Wallet adds 2 hours to the time of transaction)
-            row[1] = unix_timestamp_to_date(int(row[1]) - int(TIME_DIFFERENCE))
+            row[1] = unix_timestamp_to_date(int(row[1]) + int(TIME_DIFFERENCE))
             row[2] = remove_prefix(row[2])
-            row[3] = row[3].replace("Від:", "")
             row[6] = coins_to_hryvnia(int(row[6]))
             row[7] = coins_to_hryvnia(int(row[7]))
             row[9] = coins_to_hryvnia(int(row[9]))

@@ -3,6 +3,7 @@ import os
 from connector import change_data_in_csv
 from monobank import init_monobank
 from monobank import get_all_statements
+from datetime import datetime
 
 
 def main():
@@ -17,7 +18,8 @@ def main():
                 file_path = os.path.join(subdir_path, filename)
                 if os.path.isfile(file_path):
                     parts = file_path.split(".")
-                    updated_file_path = f"{parts[0]}_updated.{parts[1]}"
+                    current_date = datetime.now()
+                    updated_file_path = f"{parts[0]} {current_date.strftime("%b %d")}.{parts[1]}"
                     change_data_in_csv(file_path, f"{updated_file_path}")
 
 

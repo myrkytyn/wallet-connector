@@ -1,5 +1,6 @@
 import json
 import csv
+import re
 
 
 def json_to_csv(json_file, csv_file):
@@ -19,7 +20,5 @@ def coins_to_hryvnia(coins):
 
 
 def remove_prefix(string):
-    if "Вiд: " in string:
-        return string.replace("Вiд: ", "")
-    else:
-        return string
+    updated_string = re.sub(r"В[іi]д: ", "", string)
+    return updated_string
